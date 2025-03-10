@@ -32,7 +32,6 @@ public class StudentController {
         return studentService.getStudentByName(name);
     }
 
-    // API to delete a student by id
     @DeleteMapping("/{id}")
     public void deleteStudent(@PathVariable int id) {
         studentService.deleteStudent(id);
